@@ -6,7 +6,6 @@
   "author": "romarios1987 <romios047@gmail.com>",
   "license": "MIT",
   "scripts": {
-
     "client-install": "yarn --cwd client install",
     "start": "node server.js",
     "server": "nodemon server.js",
@@ -29,3 +28,4 @@
     "nodemon": "^1.18.6"
   }
 }
+
