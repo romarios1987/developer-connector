@@ -36,6 +36,7 @@ class Register extends Component {
     e.preventDefault();
     const {errors, ...fields} = this.state;
     const newUser = {...fields};
+
     //console.log(newUser);
 
     this.props.registerUser(newUser, this.props.history)
