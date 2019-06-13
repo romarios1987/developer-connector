@@ -44,12 +44,9 @@ class Register extends Component {
     const {errors, ...fields} = this.state;
     const newUser = {...fields};
 
-    //console.log(newUser);
-
     this.props.registerUser(newUser, this.props.history)
 
   };
-
   render() {
     const {name, email, password, password_confirm, errors} = this.state;
 
