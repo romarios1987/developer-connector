@@ -22,3 +22,41 @@ exports.loginValidators = [
         .isAlphanumeric().withMessage('Name must be alphabet letters and numeric.')
         .trim()
 ];
+exports.portfolioValidators = [
+    body('status', 'Status is required')
+        .not()
+        .isEmpty(),
+    body('skills', 'Skills is required')
+        .not()
+        .isEmpty()
+];
+
+exports.experienceValidators = [
+    body('title', 'Title is required')
+        .not()
+        .isEmpty(),
+    body('company', 'Company is required')
+        .not()
+        .isEmpty(),
+    body('from', 'From date is required')
+        .not()
+        .isEmpty()
+];
+
+
+exports.educationValidators = [
+    body('school', 'School is required')
+        .not()
+        .isEmpty(),
+    body('degree', 'Degree is required')
+        .not()
+        .isEmpty(),
+    body('fieldofstudy', 'Field of study is required')
+        .not()
+        .isEmpty(),
+    body('from', 'From date is required')
+        .not()
+        .isEmpty(),
+];
+
+
