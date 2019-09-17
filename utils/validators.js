@@ -60,3 +60,14 @@ exports.educationValidators = [
 ];
 
 
+exports.postValidators = [
+    body('text', 'Text post is required')
+        .not()
+        .isEmpty()
+];
+
+exports.commentValidators = [
+    body('text', 'Text comment is required')
+        .not()
+        .isEmpty()
+];
