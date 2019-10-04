@@ -6,10 +6,15 @@
   "repository": "git@github.com:romarios1987/developer-connector.git",
   "author": "Remi <romios047@gmail.com>",
   "license": "MIT",
+
   "scripts": {
+    "client-install": "yarn --cwd client install",
     "start": "node server.js",
-    "dev": "nodemon server.js"
+    "server": "nodemon server.js",
+    "client": "yarn --cwd client start",
+    "dev": "concurrently \"yarn run server\" \"yarn run client\""
   },
+
   "dependencies": {
     "bcryptjs": "^2.4.3",
     "config": "^3.2.2",
