@@ -1,5 +1,5 @@
 {
-  "mongo_URI" : "mongodb+srv://ramzes2019:remi123456@cluster0-6zlep.mongodb.net/dev-connector?retryWrites=true&w=majority",
+  "mongo_URI" : "mongodb+srv://roman:vonXPLYTAtrylzCO@cluster0.rubo0.gcp.mongodb.net/myFirstDatabase?retryWrites=true&w=majority",
   "jwtSecret" : "secret_token",
   "githubClientId": "ad8c37b74fff44db3401",
   "githubSecret": "02c215a999f915b16e3ef2e9d24ab88d7206646a"
